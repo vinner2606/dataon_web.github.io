@@ -1,0 +1,324 @@
+[
+  {
+    "id": "tgOpenChildPage",
+    "type": "TaskGroup",
+    "subType": "Execution",
+    "children": [
+      {
+        "id": "t1",
+        "type": "Task",
+        "subType": "Navigate",
+        "subProperties": {
+          "pageId": "startChildPage",
+          "pageType": "PP"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tNavigate",
+    "type": "TaskGroup",
+    "subType": "Execution",
+    "children": [
+      {
+        "id": "t1",
+        "type": "Task",
+        "subType": "Navigate",
+        "subProperties": {
+          "pageId": "textFieldPage2",
+          "pageType": "FP"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tNavigate",
+    "type": "TaskGroup",
+    "subType": "Execution",
+    "children": [
+      {
+        "id": "t1",
+        "type": "Task",
+        "subType": "Navigate",
+        "subProperties": {
+          "pageId": "textFieldPage2",
+          "pageType": "FP"
+        }
+      }
+    ]
+  },
+  {
+    "id": "backToPage1",
+    "type": "TaskGroup",
+    "subType": "Execution",
+    "children": [
+      {
+        "id": "t1",
+        "type": "Task",
+        "subType": "Navigate",
+        "subProperties": {
+          "pageId": "textFieldPage",
+          "pageType": "FP"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tgSavePersonalDetail",
+    "type": "TaskGroup",
+    "subType": "Execution",
+    "children": [
+      {
+        "id": "t1",
+        "type": "Task",
+        "subType": "Navigate",
+        "subProperties": {
+          "pageId": "addressPage",
+          "pageType": "FP"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tgSaveDocument",
+    "type": "TaskGroup",
+    "subType": "Execution",
+    "children": [
+      {
+        "id": "t1",
+        "type": "Task",
+        "subType": "Navigate",
+        "subProperties": {
+          "pageId": "personalDetailPage",
+          "pageType": "FP"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tgOpenDebugger",
+    "type": "TaskGroup",
+    "subType": "Execution",
+    "children": [
+      {
+        "id": "t1",
+        "type": "Task",
+        "subType": "OpenDebugger",
+        "subProperties": {
+          "dummyKey": "dummyValue"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tgCopy",
+    "type": "TaskGroup",
+    "subType": "Execution",
+    "children": [
+      {
+        "id": "t1",
+        "type": "Task",
+        "subType": "DataManipulator",
+        "subProperties": {
+          "copy": [
+            {
+              "copyFrom": "this.elementObj('age')",
+              "copyTo": "this.elementObj('myAge')"
+            },
+            {
+              "copyFrom": "this.entityObj('Holder')",
+              "copyTo": "this.transactionObj('myHolder')"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "tgDelete",
+    "type": "TaskGroup",
+    "subType": "Execution",
+    "children": [
+      {
+        "id": "t1",
+        "type": "Task",
+        "subType": "DataManipulator",
+        "subProperties": {
+          "delete": [
+            "this.elementObj('age')",
+            "this.entityObj('Holder')"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "backToPage1",
+    "type": "TaskGroup",
+    "subType": "Execution",
+    "children": [
+      {
+        "id": "t1",
+        "type": "Task",
+        "subType": "Navigate",
+        "subProperties": {
+          "pageId": "textFieldPage",
+          "pageType": "FP"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tgSavePersonalDetail",
+    "type": "TaskGroup",
+    "subType": "Execution",
+    "children": [
+      {
+        "id": "t1",
+        "type": "Task",
+        "subType": "Navigate",
+        "subProperties": {
+          "pageId": "addressPage",
+          "pageType": "FP"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tgSaveDocument",
+    "type": "TaskGroup",
+    "subType": "Execution",
+    "children": [
+      {
+        "id": "t1",
+        "type": "Task",
+        "subType": "Navigate",
+        "subProperties": {
+          "pageId": "personalDetailPage",
+          "pageType": "FP"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tgAddDocument",
+    "type": "TaskGroup",
+    "subType": "Execution",
+    "children": [
+      {
+        "id": "t1",
+        "type": "Task",
+        "subType": "Navigate",
+        "subProperties": {
+          "pageId": "addDocumentpage",
+          "pageType": "FP"
+        }
+      },
+      {
+        "id": "t3",
+        "type": "Task",
+        "subType": "CreateObject",
+        "subProperties": {
+          "entityType": "Holder",
+          "entityPath": "holder"
+        }
+      },
+      {
+        "id": "t2",
+        "type": "Task",
+        "subType": "CreateObject",
+        "subProperties": {
+          "entityType": "Document",
+          "entityPath": "holder.document[]"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tgStartCapturing",
+    "type": "TaskGroup",
+    "subType": "Execution",
+    "children": [
+      {
+        "id": "t2",
+        "type": "Task",
+        "subType": "Save",
+        "subProperties": {
+          "workflowType": "App"
+        }
+      },
+      {
+        "id": "t1",
+        "type": "Task",
+        "subType": "StartWorkflow",
+        "subProperties": {
+          "workflowType": "AddEmployee"
+        }
+      },
+      {
+        "id": "t3",
+        "type": "Task",
+        "subType": "Navigate",
+        "subProperties": {
+          "pageId": "personalDetailPage",
+          "pageType": "FP"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tgSaveAddress",
+    "type": "TaskGroup",
+    "subType": "Execution",
+    "children": [
+      {
+        "id": "t0",
+        "type": "Task",
+        "subType": "Save",
+        "subProperties": {
+          "workflowType": "AddEmployee"
+        }
+      },
+      {
+        "id": "t1",
+        "type": "Task",
+        "subType": "StopWorkflow",
+        "subProperties": {}
+      },
+      {
+        "id": "t2",
+        "type": "Task",
+        "subType": "Navigate",
+        "subProperties": {
+          "pageId": "startCapturingPage",
+          "pageType": "FP"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tgOpenWeb",
+    "type": "TaskGroup",
+    "subType": "Execution",
+    "children": [
+      {
+        "id": "t0",
+        "type": "Task",
+        "subType": "OpenWeb",
+        "subProperties": {
+          "openIn": "WebBrowser",
+          "scheme": "static('http')",
+          "host": "static('www.google.com')",
+          "path": "static('/search')",
+          "params": {
+            "client": "static('ubuntu')",
+            "channel": "static('fs')",
+            "q": "static('search')",
+            "ie": "static('utf-8')",
+            "oe": "static('utf-8')"
+          }
+        }
+      }
+    ]
+  }
+]

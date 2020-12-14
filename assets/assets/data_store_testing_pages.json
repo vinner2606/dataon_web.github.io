@@ -1,0 +1,1252 @@
+[
+  {
+    "id": "startCapturingPage",
+    "type": "Page",
+    "subType": "FP",
+    "properties": {
+      "security": {
+        "isCopyPasteAllowed": false
+      },
+      "default": {
+        "isEnable": "Y/N/brId",
+        "isScrollable": true
+      }
+    },
+    "uiProperties": {
+      "padding": {
+        "left": 5.0,
+        "right": 5.0,
+        "bottom": 5.0,
+        "top": 5.0
+      },
+      "decoration": {
+        "color": {
+          "primaryColor": "#ffffff",
+          "primaryColorDark": "#abcdef",
+          "accentColor": "#abcdef"
+        },
+        "font": {
+          "fontSize": 16,
+          "fontFamily": "dfdf",
+          "fontWeight": 4
+        }
+      },
+      "dimension": {},
+      "icon": {
+        "infoIcon": "url::anything"
+      },
+      "animation": {}
+    },
+    "subProperties": {},
+    "children": [
+      {
+        "id": "startCapturingAppBar",
+        "type": "Component",
+        "subType": "AppBar"
+      },
+      {
+        "id": "rowLay1",
+        "type": "Layout",
+        "subType": "Row",
+        "uiProperties": {
+          "padding": {
+            "left": 5,
+            "right": 5,
+            "bottom": 5,
+            "top": 5
+          },
+          "decoration": {
+            "color": {
+              "selectColor": "#2196F3",
+              "unSelectColor": "#cccccc"
+            }
+          },
+          "icon": {
+            "iconColor": "#2196F3",
+            "prefixIcon": "materialIcon::home"
+          }
+        },
+        "children": [
+          {
+            "id": "colLay1",
+            "type": "Layout",
+            "subType": "Column",
+            "uiProperties": {
+              "padding": {
+                "left": 5,
+                "right": 5,
+                "bottom": 5,
+                "top": 5
+              },
+              "decoration": {
+                "color": {
+                  "selectColor": "#2196F3",
+                  "unSelectColor": "#cccccc"
+                }
+              },
+              "dimension": {
+                "width": {
+                  "value": 1,
+                  "type": "weight"
+                }
+              }
+            }
+          },
+          {
+            "id": "colLay2",
+            "type": "Layout",
+            "subType": "Column",
+            "uiProperties": {
+              "padding": {
+                "left": 5,
+                "right": 5,
+                "bottom": 5,
+                "top": 5
+              },
+              "decoration": {
+                "color": {
+                  "selectColor": "#2196F3",
+                  "unSelectColor": "#cccccc"
+                },
+                "background": {
+                  "elevation": 5
+                }
+              },
+              "dimension": {
+                "width": {
+                  "value": 5,
+                  "type": "weight"
+                }
+              }
+            },
+            "children": [
+              {
+                "id": "company",
+                "type": "Element",
+                "subType": "TextField",
+                "uiProperties": {
+                  "padding": {
+                    "left": 5,
+                    "right": 5,
+                    "bottom": 5,
+                    "top": 5
+                  },
+                  "decoration": {
+                    "color": {
+                      "selectColor": "#2196F3",
+                      "unSelectColor": "#cccccc"
+                    }
+                  },
+                  "icon": {
+                    "iconColor": "#2196F3",
+                    "prefixIcon": "materialIcon::home"
+                  }
+                },
+                "properties": {
+                  "caption": "Company Name"
+                },
+                "subProperties": {
+                  "inputType": "text",
+                  "cases": "",
+                  "keyboardType": "text",
+                  "min": 0,
+                  "max": 10
+                }
+              },
+              {
+                "id": "rowForButton",
+                "type": "Layout",
+                "subType": "Row",
+                "children": [
+                  {
+                    "id": "btnCapture",
+                    "type": "Element",
+                    "subType": "Button",
+                    "uiProperties": {
+                      "padding": {
+                        "left": 5,
+                        "right": 5,
+                        "bottom": 5,
+                        "top": 5
+                      },
+                      "decoration": {
+                        "color": {
+                          "iconColor": "#2196F3",
+                          "selectColor": "#FF6A1B9A",
+                          "unselectColor": "#FFAB47BC",
+                          "captionColor": "#FFAB47BC"
+                        },
+                        "background": {
+                          "bgColor": "#aaaaaa"
+                        }
+                      },
+                      "dimension": {
+                        "width": {
+                          "value": 1,
+                          "type": "weight"
+                        }
+                      },
+                      "icon": {}
+                    },
+                    "properties": {
+                      "caption": "Start Capture"
+                    },
+                    "subProperties": {
+                      "isWrap": false
+                    },
+                    "events": {
+                      "onClick": "tgStartCapturing"
+                    }
+                  },
+                  {
+                    "id": "btnDebug",
+                    "type": "Element",
+                    "subType": "Button",
+                    "uiProperties": {
+                      "padding": {
+                        "left": 5,
+                        "right": 5,
+                        "bottom": 5,
+                        "top": 5
+                      },
+                      "decoration": {
+                        "color": {
+                          "iconColor": "#2196F3",
+                          "selectColor": "#FF6A1B9A",
+                          "unselectColor": "#FFAB47BC",
+                          "captionColor": "#FFAB47BC"
+                        },
+                        "background": {
+                          "bgColor": "#aaaaaa"
+                        }
+                      },
+                      "dimension": {
+                        "width": {
+                          "value": 1,
+                          "type": "weight"
+                        }
+                      }
+                    },
+                    "properties": {
+                      "caption": "Open Debugger"
+                    },
+                    "events": {
+                      "onClick": "tgOpenDebugger"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "colLay3",
+            "type": "Layout",
+            "subType": "Column",
+            "uiProperties": {
+              "padding": {
+                "left": 5,
+                "right": 5,
+                "bottom": 5,
+                "top": 5
+              },
+              "decoration": {
+                "color": {
+                  "selectColor": "#2196F3",
+                  "unSelectColor": "#cccccc"
+                }
+              },
+              "dimension": {
+                "width": {
+                  "value": 1,
+                  "type": "weight"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "personalDetailPage",
+    "type": "Page",
+    "subType": "FP",
+    "properties": {
+      "data": {
+        "entity": {
+          "type": "Document",
+          "path": "documents[]"
+        }
+      },
+      "security": {
+        "isCopyPasteAllowed": false
+      },
+      "default": {
+        "isEnable": "Y/N/brId",
+        "isScrollable": true
+      }
+    },
+    "uiProperties": {
+      "padding": {
+        "left": 5.0,
+        "right": 5.0,
+        "bottom": 5.0,
+        "top": 5.0
+      },
+      "decoration": {
+        "color": {
+          "primaryColor": "#ffffff",
+          "primaryColorDark": "#abcdef",
+          "accentColor": "#abcdef"
+        },
+        "font": {
+          "fontSize": 16,
+          "fontFamily": "dfdf",
+          "fontWeight": 4
+        }
+      },
+      "dimension": {},
+      "icon": {
+        "infoIcon": "url::anything"
+      },
+      "animation": {}
+    },
+    "subProperties": {},
+    "children": [
+      {
+        "id": "personalDetailsAppBar",
+        "type": "Component",
+        "subType": "AppBar"
+      },
+      {
+        "id": "rowLay1",
+        "type": "Layout",
+        "subType": "Row",
+        "uiProperties": {
+          "padding": {
+            "left": 5,
+            "right": 5,
+            "bottom": 5,
+            "top": 5
+          },
+          "decoration": {
+            "color": {
+              "selectColor": "#2196F3",
+              "unSelectColor": "#cccccc"
+            }
+          },
+          "icon": {
+            "iconColor": "#2196F3",
+            "prefixIcon": "materialIcon::home"
+          }
+        },
+        "children": [
+          {
+            "id": "colLay1",
+            "type": "Layout",
+            "subType": "Column",
+            "uiProperties": {
+              "padding": {
+                "left": 5,
+                "right": 5,
+                "bottom": 5,
+                "top": 5
+              },
+              "decoration": {
+                "color": {
+                  "selectColor": "#2196F3",
+                  "unSelectColor": "#cccccc"
+                }
+              },
+              "dimension": {
+                "width": {
+                  "value": 1,
+                  "type": "weight"
+                }
+              }
+            }
+          },
+          {
+            "id": "colLay2",
+            "type": "Layout",
+            "subType": "Column",
+            "uiProperties": {
+              "padding": {
+                "left": 5,
+                "right": 5,
+                "bottom": 5,
+                "top": 5
+              },
+              "decoration": {
+                "color": {
+                  "selectColor": "#2196F3",
+                  "unSelectColor": "#cccccc"
+                },
+                "background": {
+                  "elevation": 5
+                }
+              },
+              "dimension": {
+                "width": {
+                  "value": 5,
+                  "type": "weight"
+                }
+              }
+            },
+            "children": [
+              {
+                "id": "name",
+                "type": "Element",
+                "subType": "TextField",
+                "uiProperties": {
+                  "padding": {
+                    "left": 5,
+                    "right": 5,
+                    "bottom": 5,
+                    "top": 5
+                  },
+                  "decoration": {
+                    "color": {
+                      "selectColor": "#2196F3",
+                      "unSelectColor": "#cccccc"
+                    }
+                  },
+                  "icon": {
+                    "iconColor": "#2196F3",
+                    "prefixIcon": "materialIcon::home"
+                  }
+                },
+                "properties": {
+                  "caption": "Name"
+                },
+                "subProperties": {
+                  "inputType": "text",
+                  "cases": "",
+                  "keyboardType": "text",
+                  "maskingScheme": {},
+                  "min": 0,
+                  "max": 10
+                }
+              },
+              {
+                "id": "age",
+                "type": "Element",
+                "subType": "TextField",
+                "uiProperties": {
+                  "padding": {
+                    "left": 5,
+                    "right": 5,
+                    "bottom": 5,
+                    "top": 5
+                  },
+                  "decoration": {
+                    "color": {
+                      "selectColor": "#2196F3",
+                      "unSelectColor": "#cccccc"
+                    }
+                  },
+                  "icon": {
+                    "iconColor": "#2196F3",
+                    "prefixIcon": "materialIcon::home"
+                  }
+                },
+                "properties": {
+                  "caption": "Age"
+                },
+                "subProperties": {
+                  "inputType": "number",
+                  "cases": "",
+                  "keyboardType": "text",
+                  "maskingScheme": {},
+                  "min": 0,
+                  "max": 10
+                }
+              },
+              {
+                "id": "rowsxks",
+                "type": "Layout",
+                "subType": "Row",
+                "children": [
+                  {
+                    "id": "btn2",
+                    "type": "Element",
+                    "subType": "Button",
+                    "uiProperties": {
+                      "padding": {
+                        "left": 5,
+                        "right": 5,
+                        "bottom": 5,
+                        "top": 5
+                      },
+                      "decoration": {
+                        "color": {
+                          "iconColor": "#2196F3",
+                          "selectColor": "#FF6A1B9A",
+                          "unselectColor": "#FFAB47BC",
+                          "captionColor": "#FFAB47BC"
+                        },
+                        "background": {
+                          "bgColor": "#aaaaaa"
+                        }
+                      },
+                      "dimension": {
+                        "width": {
+                          "value": 1,
+                          "type": "weight"
+                        }
+                      },
+                      "icon": {}
+                    },
+                    "properties": {
+                      "caption": "Save"
+                    },
+                    "subProperties": {
+                      "isWrap": false
+                    },
+                    "events": {
+                      "onClick": "tgSavePersonalDetail"
+                    }
+                  },
+                  {
+                    "id": "btn3",
+                    "type": "Element",
+                    "subType": "Button",
+                    "uiProperties": {
+                      "padding": {
+                        "left": 5,
+                        "right": 5,
+                        "bottom": 5,
+                        "top": 5
+                      },
+                      "decoration": {
+                        "color": {
+                          "iconColor": "#2196F3",
+                          "selectColor": "#FF6A1B9A",
+                          "unselectColor": "#FFAB47BC",
+                          "captionColor": "#FFAB47BC"
+                        },
+                        "background": {
+                          "bgColor": "#aaaaaa"
+                        }
+                      },
+                      "dimension": {
+                        "width": {
+                          "value": 1,
+                          "type": "weight"
+                        }
+                      },
+                      "icon": {}
+                    },
+                    "properties": {
+                      "caption": "Add document"
+                    },
+                    "subProperties": {
+                      "isWrap": false
+                    },
+                    "events": {
+                      "onClick": "tgAddDocument"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "documentList",
+                "type": "Component",
+                "subType": "ListView"
+              },
+              {
+                "id": "sdamn",
+                "type": "Layout",
+                "subType": "Row",
+                "subProperties": {
+                  "mainAxisAlignment": "center"
+                },
+                "children": [
+                  {
+                    "id": "btnDebug",
+                    "type": "Element",
+                    "subType": "Button",
+                    "uiProperties": {
+                      "padding": {
+                        "left": 5,
+                        "right": 5,
+                        "bottom": 5,
+                        "top": 5
+                      },
+                      "decoration": {
+                        "color": {
+                          "iconColor": "#2196F3",
+                          "selectColor": "#FF6A1B9A",
+                          "unselectColor": "#FFAB47BC",
+                          "captionColor": "#FFAB47BC"
+                        },
+                        "background": {
+                          "bgColor": "#aaaaaa"
+                        }
+                      }
+                    },
+                    "subProperties": {
+                      "isWrap": true
+                    },
+                    "properties": {
+                      "caption": "Open Debugger"
+                    },
+                    "events": {
+                      "onClick": "tgOpenDebugger"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "colLay3",
+            "type": "Layout",
+            "subType": "Column",
+            "uiProperties": {
+              "padding": {
+                "left": 5,
+                "right": 5,
+                "bottom": 5,
+                "top": 5
+              },
+              "decoration": {
+                "color": {
+                  "selectColor": "#2196F3",
+                  "unSelectColor": "#cccccc"
+                }
+              },
+              "dimension": {
+                "width": {
+                  "value": 1,
+                  "type": "weight"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "addDocumentpage",
+    "type": "Page",
+    "subType": "FP",
+    "properties": {
+      "security": {
+        "isCopyPasteAllowed": false
+      },
+      "default": {
+        "isEnable": "Y/N/brId",
+        "isScrollable": true
+      }
+    },
+    "uiProperties": {
+      "padding": {
+        "left": 5.0,
+        "right": 5.0,
+        "bottom": 5.0,
+        "top": 5.0
+      },
+      "decoration": {
+        "color": {
+          "primaryColor": "#ffffff",
+          "primaryColorDark": "#abcdef",
+          "accentColor": "#abcdef"
+        },
+        "font": {
+          "fontSize": 16,
+          "fontFamily": "dfdf",
+          "fontWeight": 4
+        },
+        "background": {
+          "bgColor": "#8a8a8a"
+        }
+      },
+      "dimension": {},
+      "icon": {
+        "infoIcon": "url::anything"
+      },
+      "animation": {}
+    },
+    "subProperties": {},
+    "children": [
+      {
+        "id": "addDocumentAppBar",
+        "type": "Component",
+        "subType": "AppBar"
+      },
+      {
+        "id": "rowLay1",
+        "type": "Layout",
+        "subType": "Row",
+        "uiProperties": {
+          "padding": {
+            "left": 5,
+            "right": 5,
+            "bottom": 5,
+            "top": 5
+          },
+          "decoration": {
+            "color": {
+              "selectColor": "#2196F3",
+              "unSelectColor": "#cccccc"
+            }
+          },
+          "icon": {
+            "iconColor": "#2196F3",
+            "prefixIcon": "materialIcon::home"
+          }
+        },
+        "children": [
+          {
+            "id": "colLay1",
+            "type": "Layout",
+            "subType": "Column",
+            "uiProperties": {
+              "padding": {
+                "left": 5,
+                "right": 5,
+                "bottom": 5,
+                "top": 5
+              },
+              "decoration": {
+                "color": {
+                  "selectColor": "#2196F3",
+                  "unSelectColor": "#cccccc"
+                }
+              },
+              "dimension": {
+                "width": {
+                  "value": 1,
+                  "type": "weight"
+                }
+              }
+            }
+          },
+          {
+            "id": "colLay2",
+            "type": "Layout",
+            "subType": "Column",
+            "uiProperties": {
+              "padding": {
+                "left": 5,
+                "right": 5,
+                "bottom": 5,
+                "top": 5
+              },
+              "decoration": {
+                "color": {
+                  "selectColor": "#2196F3",
+                  "unSelectColor": "#cccccc"
+                },
+                "background": {
+                  "elevation": 5
+                }
+              },
+              "dimension": {
+                "width": {
+                  "value": 5,
+                  "type": "weight"
+                }
+              }
+            },
+            "children": [
+              {
+                "id": "documentType",
+                "type": "Element",
+                "subType": "TextField",
+                "uiProperties": {
+                  "padding": {
+                    "left": 5,
+                    "right": 5,
+                    "bottom": 5,
+                    "top": 5
+                  },
+                  "decoration": {
+                    "color": {
+                      "selectColor": "#2196F3",
+                      "unSelectColor": "#cccccc"
+                    }
+                  },
+                  "icon": {
+                    "iconColor": "#2196F3",
+                    "prefixIcon": "materialIcon::home"
+                  }
+                },
+                "properties": {
+                  "caption": "Document Type",
+                  "data": {
+                    "entity": {
+                      "type": "Document",
+                      "path": "documents[]"
+                    }
+                  }
+                },
+                "subProperties": {
+                  "inputType": "text",
+                  "cases": "",
+                  "keyboardType": "text",
+                  "maskingScheme": {},
+                  "min": 0,
+                  "max": 10
+                }
+              },
+              {
+                "id": "documentId",
+                "type": "Element",
+                "subType": "TextField",
+                "uiProperties": {
+                  "padding": {
+                    "left": 5,
+                    "right": 5,
+                    "bottom": 5,
+                    "top": 5
+                  },
+                  "decoration": {
+                    "color": {
+                      "selectColor": "#2196F3",
+                      "unSelectColor": "#cccccc"
+                    }
+                  },
+                  "icon": {
+                    "iconColor": "#2196F3",
+                    "prefixIcon": "materialIcon::home"
+                  }
+                },
+                "properties": {
+                  "caption": "Document Id",
+                  "data": {
+                    "entity": {
+                      "type": "Document",
+                      "path": "documents[]"
+                    }
+                  }
+                },
+                "subProperties": {
+                  "inputType": "text",
+                  "cases": "",
+                  "keyboardType": "text",
+                  "maskingScheme": {},
+                  "min": 0,
+                  "max": 10
+                }
+              },
+              {
+                "id": "sndAS",
+                "type": "Layout",
+                "subType": "Row",
+                "children": [
+                  {
+                    "id": "btn2",
+                    "type": "Element",
+                    "subType": "Button",
+                    "uiProperties": {
+                      "padding": {
+                        "left": 5,
+                        "right": 5,
+                        "bottom": 5,
+                        "top": 5
+                      },
+                      "decoration": {
+                        "color": {
+                          "iconColor": "#2196F3",
+                          "selectColor": "#FF6A1B9A",
+                          "unselectColor": "#FFAB47BC",
+                          "captionColor": "#FFAB47BC"
+                        },
+                        "background": {
+                          "bgColor": "#aaaaaa"
+                        }
+                      },
+                      "dimension": {
+                        "width": {
+                          "value": 1,
+                          "type": "weight"
+                        }
+                      },
+                      "icon": {}
+                    },
+                    "properties": {
+                      "caption": "Save Document"
+                    },
+                    "subProperties": {
+                      "isWrap": false
+                    },
+                    "events": {
+                      "onClick": "tgSaveDocument"
+                    }
+                  },
+                  {
+                    "id": "btnDebug",
+                    "type": "Element",
+                    "subType": "Button",
+                    "uiProperties": {
+                      "padding": {
+                        "left": 5,
+                        "right": 5,
+                        "bottom": 5,
+                        "top": 5
+                      },
+                      "decoration": {
+                        "color": {
+                          "iconColor": "#2196F3",
+                          "selectColor": "#FF6A1B9A",
+                          "unselectColor": "#FFAB47BC",
+                          "captionColor": "#FFAB47BC"
+                        },
+                        "background": {
+                          "bgColor": "#aaaaaa"
+                        }
+                      },
+                      "dimension": {
+                        "width": {
+                          "value": 1,
+                          "type": "weight"
+                        }
+                      }
+                    },
+                    "properties": {
+                      "caption": "Open Debugger"
+                    },
+                    "events": {
+                      "onClick": "tgOpenDebugger"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "colLay3",
+            "type": "Layout",
+            "subType": "Column",
+            "uiProperties": {
+              "padding": {
+                "left": 5,
+                "right": 5,
+                "bottom": 5,
+                "top": 5
+              },
+              "decoration": {
+                "color": {
+                  "selectColor": "#2196F3",
+                  "unSelectColor": "#cccccc"
+                }
+              },
+              "dimension": {
+                "width": {
+                  "value": 1,
+                  "type": "weight"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "addressPage",
+    "type": "Page",
+    "subType": "FP",
+    "properties": {
+      "security": {
+        "isCopyPasteAllowed": false
+      },
+      "default": {
+        "isEnable": "Y/N/brId",
+        "isScrollable": true
+      }
+    },
+    "uiProperties": {
+      "padding": {
+        "left": 5.0,
+        "right": 5.0,
+        "bottom": 5.0,
+        "top": 5.0
+      },
+      "decoration": {
+        "color": {
+          "primaryColor": "#ffffff",
+          "primaryColorDark": "#abcdef",
+          "accentColor": "#abcdef"
+        },
+        "font": {
+          "fontSize": 16,
+          "fontFamily": "dfdf",
+          "fontWeight": 4
+        }
+      },
+      "dimension": {},
+      "icon": {
+        "infoIcon": "url::anything"
+      },
+      "animation": {}
+    },
+    "subProperties": {},
+    "children": [
+      {
+        "id": "addressAppBar",
+        "type": "Component",
+        "subType": "AppBar"
+      },
+      {
+        "id": "rowLay1",
+        "type": "Layout",
+        "subType": "Row",
+        "uiProperties": {
+          "padding": {
+            "left": 5,
+            "right": 5,
+            "bottom": 5,
+            "top": 5
+          },
+          "decoration": {
+            "color": {
+              "selectColor": "#2196F3",
+              "unSelectColor": "#cccccc"
+            }
+          },
+          "icon": {
+            "iconColor": "#2196F3",
+            "prefixIcon": "materialIcon::home"
+          }
+        },
+        "children": [
+          {
+            "id": "colLay1",
+            "type": "Layout",
+            "subType": "Column",
+            "uiProperties": {
+              "padding": {
+                "left": 5,
+                "right": 5,
+                "bottom": 5,
+                "top": 5
+              },
+              "decoration": {
+                "color": {
+                  "selectColor": "#2196F3",
+                  "unSelectColor": "#cccccc"
+                }
+              },
+              "dimension": {
+                "width": {
+                  "value": 1,
+                  "type": "weight"
+                }
+              }
+            }
+          },
+          {
+            "id": "colLay2",
+            "type": "Layout",
+            "subType": "Column",
+            "uiProperties": {
+              "padding": {
+                "left": 5,
+                "right": 5,
+                "bottom": 5,
+                "top": 5
+              },
+              "decoration": {
+                "color": {
+                  "selectColor": "#2196F3",
+                  "unSelectColor": "#cccccc"
+                },
+                "background": {
+                  "elevation": 5
+                }
+              },
+              "dimension": {
+                "width": {
+                  "value": 10,
+                  "type": "weight"
+                }
+              }
+            },
+            "children": [
+              {
+                "id": "add1",
+                "type": "Element",
+                "subType": "TextField",
+                "uiProperties": {
+                  "padding": {
+                    "left": 5,
+                    "right": 5,
+                    "bottom": 5,
+                    "top": 5
+                  },
+                  "decoration": {
+                    "color": {
+                      "selectColor": "#2196F3",
+                      "unSelectColor": "#cccccc"
+                    }
+                  },
+                  "icon": {
+                    "iconColor": "#2196F3",
+                    "prefixIcon": "materialIcon::home"
+                  }
+                },
+                "properties": {
+                  "caption": "Address1"
+                },
+                "subProperties": {
+                  "inputType": "text",
+                  "cases": "",
+                  "keyboardType": "text",
+                  "maskingScheme": {},
+                  "min": 0,
+                  "max": 10
+                }
+              },
+              {
+                "id": "add2",
+                "type": "Element",
+                "subType": "TextField",
+                "uiProperties": {
+                  "padding": {
+                    "left": 5,
+                    "right": 5,
+                    "bottom": 5,
+                    "top": 5
+                  },
+                  "decoration": {
+                    "color": {
+                      "selectColor": "#2196F3",
+                      "unSelectColor": "#cccccc"
+                    }
+                  },
+                  "icon": {
+                    "iconColor": "#2196F3",
+                    "prefixIcon": "materialIcon::home"
+                  }
+                },
+                "properties": {
+                  "caption": "Address2"
+                },
+                "subProperties": {
+                  "inputType": "number",
+                  "cases": "",
+                  "keyboardType": "text",
+                  "maskingScheme": {},
+                  "min": 0,
+                  "max": 10
+                }
+              },
+              {
+                "id": "kdx",
+                "type": "Layout",
+                "subType": "Row",
+                "children": [
+                  {
+                    "id": "btnSaveAddress",
+                    "type": "Element",
+                    "subType": "Button",
+                    "uiProperties": {
+                      "padding": {
+                        "left": 5,
+                        "right": 5,
+                        "bottom": 5,
+                        "top": 5
+                      },
+                      "decoration": {
+                        "color": {
+                          "iconColor": "#2196F3",
+                          "selectColor": "#FF6A1B9A",
+                          "unselectColor": "#FFAB47BC",
+                          "captionColor": "#FFAB47BC"
+                        },
+                        "background": {
+                          "bgColor": "#aaaaaa"
+                        }
+                      },
+                      "dimension": {
+                        "width": {
+                          "value": 1,
+                          "type": "weight"
+                        }
+                      },
+                      "icon": {}
+                    },
+                    "properties": {
+                      "caption": "Save"
+                    },
+                    "subProperties": {
+                      "isWrap": false
+                    },
+                    "events": {
+                      "onClick": "tgSaveAddress"
+                    }
+                  },
+                  {
+                    "id": "btnDebug",
+                    "type": "Element",
+                    "subType": "Button",
+                    "uiProperties": {
+                      "padding": {
+                        "left": 5,
+                        "right": 5,
+                        "bottom": 5,
+                        "top": 5
+                      },
+                      "decoration": {
+                        "color": {
+                          "iconColor": "#2196F3",
+                          "selectColor": "#FF6A1B9A",
+                          "unselectColor": "#FFAB47BC",
+                          "captionColor": "#FFAB47BC"
+                        },
+                        "background": {
+                          "bgColor": "#aaaaaa"
+                        }
+                      },
+                      "dimension": {
+                        "width": {
+                          "value": 1,
+                          "type": "weight"
+                        }
+                      }
+                    },
+                    "properties": {
+                      "caption": "Open Debugger"
+                    },
+                    "events": {
+                      "onClick": "tgOpenDebugger"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "colLay3",
+            "type": "Layout",
+            "subType": "Column",
+            "uiProperties": {
+              "padding": {
+                "left": 5,
+                "right": 5,
+                "bottom": 5,
+                "top": 5
+              },
+              "decoration": {
+                "color": {
+                  "selectColor": "#2196F3",
+                  "unSelectColor": "#cccccc"
+                }
+              },
+              "dimension": {
+                "width": {
+                  "value": 1,
+                  "type": "weight"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

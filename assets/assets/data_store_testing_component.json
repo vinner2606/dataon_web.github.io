@@ -1,0 +1,171 @@
+[
+  {
+    "id": "startCapturingAppBar",
+    "type": "Component",
+    "subType": "AppBar",
+    "uiProperties": {
+      "decoration": {
+        "align": {
+          "centerCaption": true
+        }
+      }
+    },
+    "properties": {
+      "caption": "Application Workflow"
+    }
+  },
+  {
+    "id": "personalDetailsAppBar",
+    "type": "Component",
+    "subType": "AppBar",
+    "uiProperties": {
+      "decoration": {
+        "align": {
+          "centerCaption": true
+        }
+      }
+    },
+    "properties": {
+      "caption": "Personal Details"
+    }
+  },
+  {
+    "id": "addDocumentAppBar",
+    "type": "Component",
+    "subType": "AppBar",
+    "uiProperties": {
+      "decoration": {
+        "align": {
+          "centerCaption": true
+        }
+      }
+    },
+    "properties": {
+      "caption": "Add Your Documents"
+    }
+  },
+  {
+    "id": "addressAppBar",
+    "type": "Component",
+    "subType": "AppBar",
+    "uiProperties": {
+      "decoration": {
+        "align": {
+          "centerCaption": true
+        }
+      }
+    },
+    "properties": {
+      "caption": "Add Your Address"
+    }
+  },
+  {
+    "id": "documentList",
+    "type": "Component",
+    "subType": "ListView",
+    "properties": {
+      "caption": "anything",
+      "data": {
+        "inputSource": {
+          "path": "this.entityObj('holder.document')"
+        }
+      }
+    },
+    "children": [
+      {
+        "id": "documentComponent",
+        "type": "Component",
+        "subType": "PC"
+      }
+    ]
+  },
+  {
+    "id": "documentComponent",
+    "type": "Component",
+    "subType": "PC",
+    "uiProperties": {
+      "padding": {
+        "left": 5.0,
+        "right": 5.0,
+        "bottom": 5.0,
+        "top": 5.0
+      },
+      "decoration": {
+        "background": {
+          "elevation": 10,
+          "bgColor": "#dadada"
+        }
+      }
+    },
+    "children": [
+      {
+        "id": "documentType",
+        "type": "Element",
+        "subType": "Text",
+        "uiProperties": {
+          "padding": {
+            "left": 5,
+            "right": 5,
+            "bottom": 5,
+            "top": 5
+          },
+          "decoration": {
+            "color": {
+              "selectColor": "#2196F3",
+              "unSelectColor": "#cccccc"
+            }
+          },
+          "icon": {
+            "iconColor": "#2196F3",
+            "prefixIcon": "materialIcon::home"
+          }
+        },
+        "properties": {
+          "caption": "Type : "
+        },
+        "subProperties": {
+          "inputType": "text",
+          "cases": "",
+          "keyboardType": "text",
+          "maskingScheme": {},
+          "min": 0,
+          "max": 10
+        }
+      },
+      {
+        "id": "documentId",
+        "type": "Element",
+        "subType": "Text",
+        "uiProperties": {
+          "padding": {
+            "left": 5,
+            "right": 5,
+            "bottom": 5,
+            "top": 5
+          },
+          "decoration": {
+            "color": {
+              "selectColor": "#2196F3",
+              "unSelectColor": "#cccccc"
+            }
+          },
+          "icon": {
+            "iconColor": "#2196F3",
+            "prefixIcon": "materialIcon::home"
+          }
+        },
+        "properties": {
+          "caption": "ID : "
+        },
+        "subProperties": {
+          "inputType": "text",
+          "cases": "",
+          "keyboardType": "text",
+          "maskingScheme": {},
+          "min": 0,
+          "max": 10
+        }
+      }
+    ]
+  }
+]

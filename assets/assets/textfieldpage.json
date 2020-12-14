@@ -1,0 +1,157 @@
+[
+  {
+    "id": "textFieldPage",
+    "type": "Page",
+    "subType": "FP",
+    "properties": {
+      "security": {
+        "isCopyPasteAllowed": false
+      },
+      "default": {
+        "isEnable": "Y/N/brId",
+        "isScrollable": true
+      }
+    },
+    "uiProperties": {
+      "padding": {
+        "left": 5.0,
+        "right": 5.0,
+        "bottom": 5.0,
+        "top": 5.0
+      },
+      "decoration": {
+        "color": {
+          "primaryColor": "#ffffff",
+          "primaryColorDark": "#abcdef",
+          "accentColor": "#abcdef"
+        },
+        "font": {
+          "fontSize": 16,
+          "fontFamily": "dfdf",
+          "fontWeight": 4
+        }
+      },
+      "dimension": {},
+      "icon": {
+        "infoIcon": "url::anything"
+      },
+      "animation": {}
+    },
+    "subProperties": {},
+    "children": [
+      {
+        "id": "layappbar",
+        "type": "Component",
+        "subType": "AppBar"
+      },
+      {
+        "id": "laySticky",
+        "type": "Component",
+        "subType": "Sticky"
+      },
+      {
+        "id": "comp20",
+        "type": "Component",
+        "subType": "CG"
+      }
+    ]
+  },
+  {
+    "id": "textFieldPage2",
+    "type": "Page",
+    "subType": "FP",
+    "properties": {
+      "security": {
+        "isCopyPasteAllowed": false
+      },
+      "default": {
+        "isEnable": "Y/N/brId",
+        "isScrollable": true
+      }
+    },
+    "uiProperties": {
+      "padding": {
+        "left": 5.0,
+        "right": 5.0,
+        "bottom": 5.0,
+        "top": 5.0
+      },
+      "decoration": {
+        "color": {
+          "primaryColor": "#ffffff",
+          "primaryColorDark": "#abcdef",
+          "accentColor": "#abcdef"
+        },
+        "font": {
+          "fontSize": 16,
+          "fontFamily": "dfdf",
+          "fontWeight": 4
+        }
+      },
+      "dimension": {},
+      "icon": {
+        "infoIcon": "url::anything"
+      },
+      "animation": {}
+    },
+    "subProperties": {},
+    "children": [
+      {
+        "id": "layappbar",
+        "type": "Component",
+        "subType": "AppBar"
+      },
+      {
+        "id": "laySticky",
+        "type": "Component",
+        "subType": "Sticky"
+      },
+      {
+        "id": "comp20",
+        "type": "Component",
+        "subType": "CG"
+      },
+      {
+        "id": "btn",
+        "type": "Element",
+        "subType": "Button",
+        "uiProperties": {
+          "padding": {
+            "left": 5,
+            "right": 5,
+            "bottom": 5,
+            "top": 5
+          },
+          "decoration": {
+            "color": {
+              "iconColor": "#2196F3",
+              "selectColor": "#FF6A1B9A",
+              "unselectColor": "#FFAB47BC",
+              "captionColor": "#FFAB47BC"
+            },
+            "background": {
+              "bgColor": "#ffffff"
+            }
+          },
+          "icon": {
+            "prefixIcon": "home",
+            "suffixIcon": "star"
+          }
+        },
+        "properties": {
+          "caption": "Back",
+          "toolTip": {
+            "message": "click to change locale to English",
+            "defaultShow": false
+          }
+        },
+        "subProperties": {
+          "isWrap": true
+        },
+        "events": {
+          "onClick": "backToPage1"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,71 @@
+{
+    "state": [
+        {
+            "code": "Delhi",
+            "value": "Delhi",
+            "parentCode": "In"
+        },
+        {
+            "code": "UP",
+            "value": "UP",
+            "parentCode": "IN"
+        },
+        {
+            "code": "Haryana",
+            "value": "Haryana",
+            "parentCode": "In"
+        }
+    ],
+    "city": [
+        {
+            "code": "101",
+            "value": "New Delhi",
+            "parentCode": "Delhi"
+        },
+        {
+            "code": "1012",
+            "value": "Old Delhi",
+            "parentCode": "Delhi"
+        },
+        {
+            "code": "102",
+            "value": "Lucknow",
+            "parentCode": "UP"
+        }, 
+        {
+            "code": "103",
+            "value": "Agra",
+            "parentCode": "UP"
+        },
+        {
+            "code": "104",
+            "value": "Noida",
+            "parentCode": "UP"
+        },
+        {
+            "code": "105",
+            "value": "Banaras",
+            "parentCode": "UP"
+        },
+        {
+            "code": "106",
+            "value": "Bareily",
+            "parentCode": "UP"
+        },
+        {
+            "code": "107",
+            "value": "Hisar",
+            "parentCode": "Haryana"
+        },
+        {
+            "code": "108",
+            "value": "Panipat",
+            "parentCode": "Haryana"
+        },
+        {
+            "code": "109",
+            "value": "Rohtak",
+            "parentCode": "Haryana"
+        }
+    ]
+}

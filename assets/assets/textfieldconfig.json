@@ -1,0 +1,651 @@
+[
+  {
+    "id": "listComp1",
+    "type": "Component",
+    "subType": "ListView",
+    "children": [
+      {
+        "id": "pc1",
+        "type": "Component",
+        "subType": "PC"
+      }
+    ],
+    "subProperties": {
+      "orientation": "vertical"
+    }
+  },
+  {
+    "id": "pc1",
+    "type": "Component",
+    "subType": "PC",
+    "uiProperties": {
+      "padding": {
+        "left": 10,
+        "right": 10,
+        "bottom": 10,
+        "top": 10
+      },
+      "decoration": {
+        "background": {
+          "elevation": 5,
+          "bgColor": "#dedede"
+        }
+      }
+    },
+    "children": [
+      {
+        "id": "txt",
+        "type": "Element",
+        "subType": "Text",
+        "properties": {
+          "caption": "Narendra Modi"
+        }
+      },
+      {
+        "id": "rowlay11",
+        "type": "Layout",
+        "subType": "Row",
+        "children": [
+          {
+            "id": "column1",
+            "type": "Layout",
+            "subType": "Column",
+            "children": [
+              {
+                "id": "ele2",
+                "type": "Element",
+                "subType": "Image",
+                "uiProperties": {
+                  "padding": {
+                    "left": 5,
+                    "right": 5,
+                    "bottom": 5,
+                    "top": 5
+                  },
+                  "decoration": {
+                    "color": {
+                      "textColor": "#FFEF9A9A"
+                    },
+                    "background": {
+                      "bgColor": "#eeeeee"
+                    },
+                    "shape": {
+                      "type": "fill"
+                    },
+                    "font": {
+                      "fontSize": 16,
+                      "captionSize": 16
+                    }
+                  },
+                  "dimension": {
+                    "elementHeight": 100,
+                    "elementWidth": 150
+                  }
+                },
+                "properties": {
+                  "caption": "User Image"
+                },
+                "subProperties": {
+                  "fitType": "fill",
+                  "imagePath": "https://images.livemint.com/img/2020/05/12/600x338/20200403036L_1589279084762_1589279102748.jpg"
+                }
+              },
+              {
+                "id": "ele1",
+                "type": "Element",
+                "subType": "Text",
+                "uiProperties": {
+                  "padding": {
+                    "left": 5,
+                    "right": 5,
+                    "bottom": 5,
+                    "top": 5
+                  },
+                  "decoration": {
+                    "color": {
+                      "fontColor": "#FFF48FB1"
+                    },
+                    "font": {
+                      "iconSize": 15,
+                      "fontSize": 15
+                    },
+                    "align": {
+                      "controlAlignment": "center",
+                      "imageAlignment": "right"
+                    }
+                  },
+                  "icon": {
+                    "icon": "calendar_today",
+                    "iconColor": "#FFFF9100"
+                  }
+                },
+                "properties": {
+                  "caption": "26/06/1993"
+                },
+                "subProperties": {
+                  "imageAlignment": "iconRightAlign"
+                }
+              }
+            ]
+          },
+          {
+            "id": "column2",
+            "type": "Layout",
+            "subType": "Column",
+            "children": [
+              {
+                "id": "ele3",
+                "type": "Element",
+                "subType": "Text",
+                "uiProperties": {
+                  "padding": {
+                    "left": 5,
+                    "right": 5,
+                    "bottom": 5,
+                    "top": 5
+                  },
+                  "decoration": {
+                    "color": {
+                      "fontColor": "#FFF48FB1"
+                    },
+                    "font": {
+                      "iconSize": 15,
+                      "fontSize": 15
+                    },
+                    "align": {
+                      "controlAlignment": "center",
+                      "imageAlignment": "right"
+                    }
+                  },
+                  "icon": {
+                    "icon": "calendar_today",
+                    "iconColor": "#FFFF9100",
+                    "iconSize": 15
+                  }
+                },
+                "properties": {
+                  "caption": "Textview  top "
+                },
+                "subProperties": {
+                  "imageAlignment": "iconRightAlign"
+                }
+              },
+              {
+                "id": "ele4",
+                "type": "Element",
+                "subType": "Text",
+                "uiProperties": {
+                  "padding": {
+                    "left": 5,
+                    "right": 5,
+                    "bottom": 5,
+                    "top": 5
+                  },
+                  "decoration": {
+                    "color": {
+                      "fontColor": "#FFF48FB1"
+                    },
+                    "font": {
+                      "iconSize": 15,
+                      "fontSize": 15
+                    },
+                    "align": {
+                      "controlAlignment": "center",
+                      "imageAlignment": "right"
+                    }
+                  },
+                  "icon": {
+                    "icon": "calendar_today",
+                    "iconColor": "#FFFF9100"
+                  }
+                },
+                "properties": {
+                  "caption": "Textview bottom."
+                },
+                "subProperties": {
+                  "imageAlignment": "iconRightAlign"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "comp20",
+    "type": "Component",
+    "subType": "CG",
+    "properties": {
+      "isSecure": true
+    },
+    "uiProperties": {
+      "padding": {
+        "left": 5,
+        "right": 5,
+        "bottom": 5,
+        "top": 5
+      },
+      "dimension": {}
+    },
+    "children": [
+      {
+        "id": "ele1",
+        "type": "Element",
+        "subType": "TextField",
+        "uiProperties": {
+          "padding": {
+            "left": 5,
+            "right": 5,
+            "bottom": 5,
+            "top": 5
+          },
+          "decoration": {
+            "color": {
+              "selectColor": "#2196F3",
+              "unSelectColor": "#cccccc"
+            }
+          },
+          "icon": {
+            "iconColor": "#2196F3",
+            "prefixIcon": "materialIcon::home"
+          }
+        },
+        "properties": {
+          "caption": "Your Address"
+        },
+        "subProperties": {
+          "inputType": "text",
+          "cases": "",
+          "keyboardType": "text",
+          "maskingScheme": {},
+          "min": 0,
+          "max": 10
+        }
+      },
+      {
+        "id": "ele2",
+        "type": "Element",
+        "subType": "TextField",
+        "uiProperties": {
+          "padding": {
+            "left": 5,
+            "right": 5,
+            "bottom": 5,
+            "top": 5
+          },
+          "decoration": {
+            "color": {
+              "selectColor": "#2196F3",
+              "unSelectColor": "#cccccc"
+            },
+            "shape": {
+              "type": "line"
+            }
+          },
+          "dimension": {
+            "width": {
+              "type": "weight",
+              "value": 2
+            }
+          },
+          "icon": {
+            "iconColor": "#2196F3"
+          }
+        },
+        "properties": {
+          "caption": "Your Name"
+        },
+        "subProperties": {
+          "inputType": "text",
+          "cases": "",
+          "keyboardType": "text",
+          "maskingScheme": {},
+          "min": 0,
+          "max": 10
+        }
+      },
+      {
+        "id": "ele4",
+        "type": "Element",
+        "subType": "TextField",
+        "uiProperties": {
+          "padding": {
+            "left": 5,
+            "right": 5,
+            "bottom": 5,
+            "top": 5
+          },
+          "decoration": {
+            "color": {
+              "selectColor": "#FFB71C1C",
+              "unSelectColor": "#FFE53935"
+            },
+            "shape": {
+              "type": "fill"
+            },
+            "background": {
+              "backgroundColor": "#FFFFCDD2"
+            }
+          },
+          "icon": {
+            "iconColor": "#FFB71C1C",
+            "prefixIcon": "materialIcon::home"
+          }
+        },
+        "properties": {
+          "caption": "Your Address"
+        },
+        "subProperties": {
+          "inputType": "text",
+          "cases": "",
+          "keyboardType": "text",
+          "maskingScheme": {},
+          "min": 0,
+          "max": 10
+        }
+      },
+      {
+        "id": "ele5",
+        "type": "Element",
+        "subType": "TextField",
+        "uiProperties": {
+          "padding": {
+            "left": 5,
+            "right": 5,
+            "bottom": 5,
+            "top": 5
+          },
+          "decoration": {
+            "color": {
+              "selectColor": "#2196F3",
+              "unSelectColor": "#cccccc"
+            },
+            "shape": {
+              "type": "fill"
+            },
+            "background": {
+              "backgroundColor": "#1F000000"
+            }
+          },
+          "icon": {
+            "iconColor": "#2196F3",
+            "suffixIcon": "materialIcon::star"
+          }
+        },
+        "properties": {
+          "caption": "Your Address"
+        },
+        "subProperties": {
+          "inputType": "text",
+          "cases": "",
+          "keyboardType": "text",
+          "maskingScheme": {},
+          "min": 0,
+          "max": 10
+        }
+      },
+      {
+        "id": "ele6",
+        "type": "Element",
+        "subType": "TextField",
+        "uiProperties": {
+          "padding": {
+            "left": 5,
+            "right": 5,
+            "bottom": 5,
+            "top": 5
+          },
+          "decoration": {
+            "color": {
+              "selectColor": "#2196F3",
+              "unSelectColor": "#cccccc"
+            },
+            "shape": {
+              "type": "fill"
+            },
+            "background": {
+              "backgroundColor": "#ffffff"
+            }
+          },
+          "icon": {
+            "iconColor": "#2196F3"
+          }
+        },
+        "properties": {
+          "caption": "Your Address"
+        },
+        "subProperties": {
+          "inputType": "text",
+          "cases": "",
+          "keyboardType": "text",
+          "maskingScheme": {},
+          "min": 0,
+          "max": 10
+        }
+      },
+      {
+        "id": "ele7",
+        "type": "Element",
+        "subType": "TextField",
+        "uiProperties": {
+          "padding": {
+            "left": 5,
+            "right": 5,
+            "bottom": 5,
+            "top": 5
+          },
+          "decoration": {
+            "color": {
+              "selectColor": "#FF6A1B9A",
+              "unSelectColor": "#FFAB47BC"
+            },
+            "background": {
+              "backgroundColor": "#ffffff"
+            },
+            "font": {
+              "captionColor": "#FFAB47BC"
+            },
+            "shape": {
+              "type": "outline"
+            }
+          },
+          "icon": {
+            "iconColor": "#2196F3",
+            "prefixIcon": "materialIcon::home",
+            "suffixIcon": "url::https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/home-512.png"
+          }
+        },
+        "properties": {
+          "caption": "Your Address"
+        },
+        "subProperties": {
+          "imageHeight": 0.0,
+          "imageWidth": 0.0,
+          "inputType": "text",
+          "cases": "",
+          "keyboardType": "text",
+          "maskingScheme": {},
+          "min": 0,
+          "max": 10
+        }
+      },
+      {
+        "id": "eleecyg",
+        "type": "Element",
+        "subType": "TextField",
+        "uiProperties": {
+          "padding": {
+            "left": 5,
+            "right": 5,
+            "bottom": 5,
+            "top": 5
+          },
+          "decoration": {
+            "color": {
+              "selectColor": "#FF6A1B9A",
+              "unSelectColor": "#FFAB47BC"
+            },
+            "background": {
+              "backgroundColor": "#ffffff"
+            },
+            "font": {
+              "captionColor": "#FFAB47BC"
+            },
+            "shape": {
+              "type": "outline"
+            }
+          },
+          "icon": {
+            "iconColor": "#2196F3"
+          }
+        },
+        "properties": {
+          "caption": "Your Address"
+        },
+        "subProperties": {
+          "inputType": "text",
+          "cases": "",
+          "keyboardType": "text",
+          "maskingScheme": {},
+          "min": 0,
+          "max": 10
+        }
+      },
+      {
+        "id": "xabeg",
+        "type": "Element",
+        "subType": "TextField"
+      },
+      {
+        "id": "btn2",
+        "type": "Element",
+        "subType": "Button",
+        "uiProperties": {
+          "padding": {
+            "left": 5,
+            "right": 5,
+            "bottom": 5,
+            "top": 5
+          },
+          "decoration": {
+            "color": {
+              "iconColor": "#2196F3",
+              "selectColor": "#FF6A1B9A",
+              "unselectColor": "#FFAB47BC",
+              "captionColor": "#FFAB47BC"
+            },
+            "background": {
+              "bgColor": "#aaaaaa"
+            }
+          },
+          "icon": {}
+        },
+        "properties": {
+          "caption": "Navigate",
+          "toolTip": {
+            "message": "click to change locale to hindi",
+            "hideTime": 10,
+            "defaultShow": false
+          }
+        },
+        "subProperties": {
+          "isWrap": false
+        },
+        "events": {
+          "onClick": "tNavigate"
+        }
+      },
+      {
+        "id": "row",
+        "type": "Element",
+        "subType": "RowElement",
+        "children": [
+          {
+            "id": "btn2",
+            "type": "Element",
+            "subType": "Button",
+            "uiProperties": {
+              "padding": {
+                "left": 5,
+                "right": 5,
+                "bottom": 5,
+                "top": 5
+              },
+              "decoration": {
+                "color": {
+                  "iconColor": "#2196F3",
+                  "selectColor": "#FF6A1B9A",
+                  "unselectColor": "#FFAB47BC",
+                  "captionColor": "#FFAB47BC"
+                },
+                "background": {
+                  "bgColor": "#fafa12"
+                }
+              },
+              "icon": {
+                "prefixIcon": "materialIcon::home",
+                "suffixIcon": "materialIcon::star"
+              }
+            },
+            "properties": {
+              "caption": "Hindi",
+              "toolTip": {
+                "message": "click to change locale to hindi",
+                "hideTime": 10,
+                "defaultShow": false
+              }
+            },
+            "subProperties": {
+              "isWrap": true
+            },
+            "events": {
+              "onClick": "tgLocaleHindi"
+            }
+          },
+          {
+            "id": "btn",
+            "type": "Element",
+            "subType": "Button",
+            "uiProperties": {
+              "padding": {
+                "left": 5,
+                "right": 5,
+                "bottom": 5,
+                "top": 5
+              },
+              "decoration": {
+                "color": {
+                  "iconColor": "#2196F3",
+                  "selectColor": "#FF6A1B9A",
+                  "unselectColor": "#FFAB47BC",
+                  "captionColor": "#FFAB47BC"
+                },
+                "background": {
+                  "bgColor": "#ffffff"
+                }
+              },
+              "icon": {
+                "prefixIcon": "home",
+                "suffixIcon": "star"
+              }
+            },
+            "properties": {
+              "caption": "English",
+              "toolTip": {
+                "message": "click to change locale to English",
+                "defaultShow": false
+              }
+            },
+            "subProperties": {
+              "isWrap": true
+            },
+            "events": {
+              "onClick": "tgLocaleEnglish"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

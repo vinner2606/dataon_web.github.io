@@ -1,0 +1,43 @@
+[
+  {
+    "id": "AddEmployee",
+    "type": "AddEmployee",
+    "page": [
+      "personalDetailPage",
+      "addressPage",
+      "addDocumentpage"
+    ],
+    "br": [],
+    "task": [
+      "tgSavePersonalDetail",
+      "tgAddDocument",
+      "tgOpenDebugger",
+      "tgSaveDocument",
+      "tgSaveAddress"
+    ],
+    "component": [
+      "personalDetailsAppBar",
+      "documentList",
+      "documentComponent",
+      "addDocumentAppBar",
+      "addressAppBar"
+    ]
+  },
+  {
+    "id": "App",
+    "type": "App",
+    "landingPage": "startCapturingPage",
+    "component": [
+      "startCapturingAppBar"
+    ],
+    "page": [
+      "startCapturingPage",
+      "startChildPage"
+    ],
+    "br": [],
+    "task": [
+      "tgStartCapturing",
+      "tgOpenDebugger"
+    ]
+  }
+]
